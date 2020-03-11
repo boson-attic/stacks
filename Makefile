@@ -6,7 +6,7 @@ VERS := $(shell [ -z $(VTAG) ] && echo 'tip' || echo $(VTAG) )
 
 all: vendor generate commit ## Update the index generator and generate new index files.
 
-vendor:  ## Updates the vendored build script create_codewind_index.py
+vendor:  ## Updates the vendored build script 'create_codewind_index.py'
 	@-curl -o ./lib/create_codewind_index.py https://raw.githubusercontent.com/appsody/stacks/master/ci/create_codewind_index.py
 	@chmod +x ./lib/create_codewind_index.py
 
@@ -20,11 +20,10 @@ commit:
 	#
 
 release: ## Publish the stack index files as a release. (requires hub and the current commit tagged)
-ifeq ($(VERS), 'tip')
+ifeq ('$(VERS)', 'tip')
 	$(error current commit is not a tagged version)
 endif
-
-	#@hub release create -a boson-index.yaml -a boson-index.json -m '$(VERS)' $(VERS)
+	hub release create -a boson-index.yaml -a boson-index.json -m '$(VERS)' $(VERS)
 
 # Auto documenting help
 # see http://marmelab.com/blog/2016/02/29/auto-documented-makefile.html
