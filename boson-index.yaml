@@ -1,0 +1,30 @@
+apiVersion: v2
+stacks:
+- id: go
+  name: Go FaaS
+  version: 0.0.1
+  description: Go Function Runtime
+  license: Apache-2.0
+  language: go
+  maintainers:
+  - name: lkingland
+    email: lkingland2038@gmail.com
+    github-id: lkingland
+  default-template: default
+  templates:
+  - id: default
+    url: https://github.com/lkingland/go-functions/releases/latest/download/go.v0.0.1.templates.default.tar.gz
+- id: node-ce-functions
+  name: JavaScript FaaS
+  version: 0.0.1
+  description: Node.js function runtime for cloud events
+  license: Apache-2.0
+  language: JavaScript
+  maintainers:
+  - name: Lance Ball
+    email: lball@redhat.com
+    github-id: lance
+  default-template: default
+  templates:
+  - id: default
+    url: https://github.com/openshift-cloud-functions/node-ce-functions/releases/latest/download/node-ce-functions.v0.0.1.templates.default.tar.gz
