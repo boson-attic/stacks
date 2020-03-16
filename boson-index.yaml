@@ -16,7 +16,7 @@ stacks:
     url: https://github.com/lkingland/go-functions/releases/latest/download/go.v0.0.1.templates.default.tar.gz
 - id: node-ce-functions
   name: JavaScript FaaS
-  version: 0.0.1
+  version: 0.0.2
   description: Node.js function runtime for cloud events
   license: Apache-2.0
   language: JavaScript
@@ -27,4 +27,4 @@ stacks:
   default-template: default
   templates:
   - id: default
-    url: https://github.com/openshift-cloud-functions/node-ce-functions/releases/latest/download/node-ce-functions.v0.0.1.templates.default.tar.gz
+    url: https://github.com/openshift-cloud-functions/node-ce-functions/releases/latest/download/node-ce-functions.v0.0.2.templates.default.tar.gz
