@@ -10,7 +10,7 @@ vendor:  ## Updates the vendored build script 'create_codewind_index.py'
 	@-curl -o ./lib/create_codewind_index.py https://raw.githubusercontent.com/appsody/stacks/master/ci/create_codewind_index.py
 	@chmod +x ./lib/create_codewind_index.py
 
-generate: ## Generate a repository inded file from the default .yaml (requires Python3)
+generate: ## Generate a repository index file from the default .yaml (requires Python3)
 	@cp ~/.appsody/stacks/dev.local/boson-index.yaml .
 	@./lib/create_codewind_index.py -n "Boson" -f ./boson-index.yaml
 
