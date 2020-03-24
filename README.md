@@ -26,14 +26,14 @@ requires: python3 and hub
 
 When a new stack is added (or its metadata changes), package and deploy the stack first (see the stack repo for instructions) and after doing so the local dev.local repo will have the updated boson-index.yaml, which can be released via this repository using the following process:
 
-1) Generate a new ./boson-index.json and ./boson-index.yaml 
+1) Generate a new ./boson-index.json and ./boson-index.yaml
 ```
 make generate
 ```
 2) Commit the updated index files and tag the commit with a new version. For example:
 ```
 git commit -m "Release Go v0.0.1" boson-index.json boson-index.yaml
-git tag v0.0.4
+git tag v0.0.5
 git push && git push --tags
 ```
 
