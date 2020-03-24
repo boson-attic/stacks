@@ -11,9 +11,11 @@ stacks:
     email: lkingland2038@gmail.com
     github-id: lkingland
   default-template: default
+  src: ""
   templates:
   - id: default
     url: https://github.com/lkingland/go-functions/releases/latest/download/go.v0.0.1.templates.default.tar.gz
+  image: ""
 - id: node-ce-functions
   name: JavaScript FaaS
   version: 0.0.2
@@ -25,6 +27,27 @@ stacks:
     email: lball@redhat.com
     github-id: lance
   default-template: default
+  src: ""
   templates:
   - id: default
     url: https://github.com/openshift-cloud-functions/node-ce-functions/releases/latest/download/node-ce-functions.v0.0.2.templates.default.tar.gz
+  image: ""
+- id: quarkus-ce-functions
+  name: Quarkus Functions
+  version: 0.0.1
+  description: Quarkus function runtime for cloud event services
+  license: Apache-2.0
+  language: java
+  maintainers:
+  - name: Lance Ball
+    email: lball@redhat.com
+    github-id: lance
+  - name: Matej Vasek
+    email: mvasek@redhat.com
+    github-id: matejvasek
+  default-template: default
+  src: https://github.com/openshift-cloud-functions/quarkus-ce-functions/releases/latest/download/quarkus-ce-functions.v0.0.1.source.tar.gz
+  templates:
+  - id: default
+    url: https://github.com/openshift-cloud-functions/quarkus-ce-functions/releases/latest/download/quarkus-ce-functions.v0.0.1.templates.default.tar.gz
+  image: quay.io/boson/quarkus-ce-functions:0.0.1
