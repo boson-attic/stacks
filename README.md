@@ -6,7 +6,7 @@ Stacks repository.
 
 Add the repository to your local repository cache
 ```
-appsody repo add boson https://github.com/openshift-cloud-functions/stacks/releases/latest/download/boson-index.yaml
+appsody repo add boson https://github.com/boson-project/stacks/releases/latest/download/boson-index.yaml
 ```
 
 Confirm the stack is now available
