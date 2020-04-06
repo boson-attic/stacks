@@ -1,21 +1,5 @@
 apiVersion: v2
 stacks:
-- id: go
-  name: Go FaaS
-  version: 0.0.1
-  description: Go Function Runtime
-  license: Apache-2.0
-  language: go
-  maintainers:
-  - name: lkingland
-    email: lkingland2038@gmail.com
-    github-id: lkingland
-  default-template: default
-  src: ""
-  templates:
-  - id: default
-    url: https://github.com/lkingland/go-functions/releases/latest/download/go.v0.0.1.templates.default.tar.gz
-  image: ""
 - id: quarkus-ce-functions
   name: Quarkus Functions
   version: 0.0.1
@@ -51,3 +35,19 @@ stacks:
   - id: default
     url: https://github.com/boson-project/node-ce-functions/releases/latest/download/node-ce-functions.v0.0.3.templates.default.tar.gz
   image: quay.io/boson/node-ce-functions:0.0.3
+- id: go-ce-functions
+  name: Go FaaS
+  version: 0.0.2
+  description: Go function runtime
+  license: Apache-2.0
+  language: go
+  maintainers:
+  - name: lkingland
+    email: lkingland2038@gmail.com
+    github-id: lkingland
+  default-template: default
+  src: https://github.com/boson-project/go-ce-functions/releases/latest/download/go-ce-functions.v0.0.2.source.tar.gz
+  templates:
+  - id: default
+    url: https://github.com/boson-project/go-ce-functions/releases/latest/download/go-ce-functions.v0.0.2.templates.default.tar.gz
+  image: quay.io/boson/go-ce-functions:0.0.2
