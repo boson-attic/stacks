@@ -16,22 +16,6 @@ stacks:
   - id: default
     url: https://github.com/lkingland/go-functions/releases/latest/download/go.v0.0.1.templates.default.tar.gz
   image: ""
-- id: node-ce-functions
-  name: JavaScript FaaS
-  version: 0.0.2
-  description: Node.js function runtime for cloud events
-  license: Apache-2.0
-  language: JavaScript
-  maintainers:
-  - name: Lance Ball
-    email: lball@redhat.com
-    github-id: lance
-  default-template: default
-  src: ""
-  templates:
-  - id: default
-    url: https://github.com/boson-project/node-ce-functions/releases/latest/download/node-ce-functions.v0.0.2.templates.default.tar.gz
-  image: ""
 - id: quarkus-ce-functions
   name: Quarkus Functions
   version: 0.0.1
@@ -46,8 +30,24 @@ stacks:
     email: mvasek@redhat.com
     github-id: matejvasek
   default-template: default
-  src: https://github.com/boson-project/quarkus-ce-functions/releases/latest/download/quarkus-ce-functions.v0.0.1.source.tar.gz
+  src: https://github.com/openshift-cloud-functions/quarkus-ce-functions/releases/latest/download/quarkus-ce-functions.v0.0.1.source.tar.gz
   templates:
   - id: default
-    url: https://github.com/boson-project/quarkus-ce-functions/releases/latest/download/quarkus-ce-functions.v0.0.1.templates.default.tar.gz
+    url: https://github.com/openshift-cloud-functions/quarkus-ce-functions/releases/latest/download/quarkus-ce-functions.v0.0.1.templates.default.tar.gz
   image: quay.io/boson/quarkus-ce-functions:0.0.1
+- id: node-ce-functions
+  name: JavaScript FaaS
+  version: 0.0.3
+  description: Node.js function runtime for cloud events
+  license: Apache-2.0
+  language: JavaScript
+  maintainers:
+  - name: Lance Ball
+    email: lball@redhat.com
+    github-id: lance
+  default-template: default
+  src: https://github.com/boson-project/node-ce-functions/releases/latest/download/node-ce-functions.v0.0.3.source.tar.gz
+  templates:
+  - id: default
+    url: https://github.com/boson-project/node-ce-functions/releases/latest/download/node-ce-functions.v0.0.3.templates.default.tar.gz
+  image: quay.io/boson/node-ce-functions:0.0.3
