@@ -1,16 +1,5 @@
 [
     {
-        "displayName": "Boson JavaScript FaaS template",
-        "description": "Node.js function runtime for cloud events",
-        "language": "JavaScript",
-        "projectType": "appsodyExtension",
-        "projectStyle": "Appsody",
-        "location": "https://github.com/boson-project/node-ce-functions/releases/latest/download/node-ce-functions.v0.0.3.templates.default.tar.gz",
-        "links": {
-            "self": "/devfiles/node-ce-functions/devfile.yaml"
-        }
-    },
-    {
         "displayName": "Boson Go FaaS template",
         "description": "Go function runtime",
         "language": "go",
@@ -30,6 +19,17 @@
         "location": "https://github.com/boson-project/quarkus-ce-functions/releases/latest/download/quarkus-ce-functions.v0.0.1.templates.default.tar.gz",
         "links": {
             "self": "/devfiles/quarkus-ce-functions/devfile.yaml"
+        }
+    },
+    {
+        "displayName": "Boson JavaScript FaaS template",
+        "description": "Node.js function runtime for cloud events",
+        "language": "JavaScript",
+        "projectType": "appsodyExtension",
+        "projectStyle": "Appsody",
+        "location": "https://github.com/boson-project/node-ce-functions/releases/latest/download/node-ce-functions.v0.0.4.templates.default.tar.gz",
+        "links": {
+            "self": "/devfiles/node-ce-functions/devfile.yaml"
         }
     }
 ]
