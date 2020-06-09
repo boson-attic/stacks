@@ -18,7 +18,7 @@ stacks:
   image: quay.io/boson/go-ce-functions:0.0.2
 - id: quarkus-ce-functions
   name: Quarkus Functions
-  version: 0.0.2
+  version: 0.0.3
   description: Quarkus function runtime for cloud event services
   license: Apache-2.0
   language: java
@@ -30,10 +30,10 @@ stacks:
     email: mvasek@redhat.com
     github-id: matejvasek
   default-template: default
-  src: https://github.com/boson-project/quarkus-ce-functions/releases/download/v0.0.2/quarkus-ce-functions.v0.0.2.source.tar.gz
+  src: https://github.com/boson-project/quarkus-ce-functions/releases/download/v0.0.3/quarkus-ce-functions.v0.0.3.source.tar.gz
   templates:
   - id: default
-    url: https://github.com/boson-project/quarkus-ce-functions/releases/download/v0.0.2/quarkus-ce-functions.v0.0.2.templates.default.tar.gz
+    url: https://github.com/boson-project/quarkus-ce-functions/releases/download/v0.0.3/quarkus-ce-functions.v0.0.3.templates.default.tar.gz
   requirements:
     appsody-version: '>= 0.6.0'
   image: quay.io/boson/quarkus-ce-functions:0.0.2
